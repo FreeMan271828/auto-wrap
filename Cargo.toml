@@ -4,8 +4,9 @@ version = "0.1.0"
 edition = "2024"
 license = "MIT"
 description = "Ergonomic smart pointer and interior mutability extensions"
-repository = "https://github.com/yourname/wrapx"
+repository = "https://github.com/FreeMan271828/auto-wrap"
 readme = "README.md"
+authors = ["freeman<freedomman271828@gmail.com>"]
 
 [features]
 default = ["std"]
