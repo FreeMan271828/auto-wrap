@@ -17,12 +17,12 @@ such as Cell, RefCell, Rc, Arc, and Mutex. It is designed for ergonomic usage wi
 Add to your Cargo.toml:
 ```
 [dependencies]
-auto_wrap = "0.1"
+auto_wrap = "1.0.0"
 
 Optional features:
 
 [dependencies.auto_wrap]
-version = "0.1"
+version = "1.0.0"
 features = ["sync", "std"]
 ```
 
