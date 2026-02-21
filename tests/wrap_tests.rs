@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use auto_wrap::WrapExt;
+    use autowrap::WrapExt;
 
     #[test]
     fn test_cell_wrap() {
@@ -15,6 +15,7 @@ mod tests {
     mod std_tests {
         use super::*;
         use std::rc::Rc;
+        use autowrap::WrapExt;
 
         #[test]
         fn test_refcell_wrap() {
