@@ -1,0 +1,15 @@
+[package]
+name = "auto-wrap"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Ergonomic smart pointer and interior mutability extensions"
+repository = "https://github.com/yourname/wrapx"
+readme = "README.md"
+
+[features]
+default = ["std"]
+std = []
+sync = ["std"]
+
+[dependencies]
