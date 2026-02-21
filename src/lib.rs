@@ -3,14 +3,14 @@
 #[cfg(feature = "std")]
 extern crate std;
 
+
 #[cfg(feature = "std")]
-use std::{
-    cell::RefCell,
-    rc::Rc,
-};
+use std::{rc::Rc, cell::RefCell};
+
+#[cfg(all(feature = "std", feature = "sync"))]
+use std::sync::{Arc, Mutex};
 
 use core::cell::Cell;
-use std::sync::{Arc, Mutex};
 
 /// 扩展 trait：为任意 Sized 类型提供智能封装能力
 ///
