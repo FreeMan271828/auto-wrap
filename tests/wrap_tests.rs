@@ -13,7 +13,6 @@ mod tests {
 
     #[cfg(feature = "std")]
     mod std_tests {
-        use super::*;
         use std::rc::Rc;
         use autowrap::WrapExt;
 

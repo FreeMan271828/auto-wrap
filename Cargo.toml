@@ -1,7 +1,7 @@
 [package]
 name = "autowrap"
 version = "1.0.1"
-edition = "2024"
+edition = "2021"
 license = "MIT"
 description = "Ergonomic smart pointer and interior mutability extensions"
 repository = "https://github.com/FreeMan271828/auto-wrap"
@@ -14,3 +14,15 @@ std = []
 sync = ["std"]
 
 [dependencies]
+
+[profile.release]
+opt-level = 3           # 最高优化级别
+lto = "fat"             # 完整链接时优化
+codegen-units = 1       # 单一代码生成单元，最大化优化
+strip = true            # 移除调试符号
+panic = "abort"         # 使用 abort 替代 unwinding，减小二进制体积
+
+[profile.bench]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
