@@ -1,5 +1,5 @@
 [package]
-name = "auto-wrap"
+name = "autowrap"
 version = "1.0.0"
 edition = "2024"
 license = "MIT"
